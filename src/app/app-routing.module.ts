@@ -1,3 +1,4 @@
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProductsComponent } from './products/products.component';
 import { HomeComponent } from './home/home.component';
@@ -16,6 +17,9 @@ const routes: Routes = [
   },
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactsComponent },
+  {path: '**',
+    component: PageNotFoundComponent  
+}
 ];
 
 @NgModule({
