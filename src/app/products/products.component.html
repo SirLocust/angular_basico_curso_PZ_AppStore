@@ -2,7 +2,7 @@
 
 <div class="product-grid">
     <app-product 
-    *ngFor="let product of products"
+    *ngFor="let product of this.productService.getAllProducts()"
     (productClicked)="clickProduct($event)"
     [product]="product"
     >

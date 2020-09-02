@@ -1,3 +1,4 @@
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProductsComponent } from './products/products.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
   },
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactsComponent },
+  {
+    path: 'products/:id',
+    component:ProductDetailComponent
+  },
   {path: '**',
     component: PageNotFoundComponent  
 }
