@@ -3,4 +3,4 @@
 <strong>{{ product.price | currency }}</strong>
 <p>{{ product.description | slice:0:10 }}</p>
 <p>{{ today | date:'HH:mm' }}</p>
-<button (click)="addCart()">Agregar al carrito</button>
+<button [routerLink]="['/products',product.id]">Ver Detalle</button>
