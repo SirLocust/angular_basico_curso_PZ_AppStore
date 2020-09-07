@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,8 +8,7 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProductComponent } from './components/product/product.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
@@ -20,8 +20,7 @@ import { LayoutComponent } from './layout/layout.component';
     ProductsComponent,
     ContactsComponent,
     ProductComponent,
-    HeaderComponent,
-    FooterComponent,
+  
 
     PageNotFoundComponent,
     ProductDetailComponent,
@@ -30,6 +29,7 @@ import { LayoutComponent } from './layout/layout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule
 
   ],
   providers: [],
