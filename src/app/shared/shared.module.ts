@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { HomeRoutingModule } from './../home/home_routing.module';
 import { AppRoutingModule } from './../app-routing.module';
 import { NgModule } from '@angular/core';
@@ -13,7 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule,
+    RouterModule
+    // HomeRoutingModule,
     // AppRoutingModule
   ],
   exports: [
