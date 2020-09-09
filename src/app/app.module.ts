@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LayoutComponent } from './layout/layout.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { LayoutComponent } from './layout/layout.component';
 
     LayoutComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, CoreModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, CoreModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

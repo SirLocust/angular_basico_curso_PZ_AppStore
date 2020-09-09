@@ -3,4 +3,4 @@
 <strong>{{ product.price | currency }}</strong>
 <p>{{ product.description | slice:0:10 }}</p>
 <p>{{ today | date:'HH:mm' }}</p>
-<button [routerLink]="['/products',product.id]">Ver Detalle</button>
+<button [routerLink]="['/products',product.id]" mat-raised-button color="primary">Ver Detalle</button>

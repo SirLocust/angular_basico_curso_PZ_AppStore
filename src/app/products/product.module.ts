@@ -1,3 +1,4 @@
+import { MaterialModule } from './../material/material.module';
 import {ProductComponent} from './components/product/product.component'
 import { ProductRoutingModule } from './product-routing.module';
 import { NgModule } from '@angular/core';
@@ -13,7 +14,8 @@ import { ProductsComponent} from './components/products/products.component'
   ],
   imports: [
     CommonModule,
-    ProductRoutingModule
+    ProductRoutingModule,
+    MaterialModule
   ],
   exports:[
     ProductDetailComponent,
