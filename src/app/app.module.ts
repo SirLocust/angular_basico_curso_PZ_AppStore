@@ -1,3 +1,4 @@
+import { AdminModule } from './admin/admin.module';
 import { ContactsModule } from './contactss/contacts.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
@@ -23,7 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
     LayoutComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, CoreModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, CoreModule, BrowserAnimationsModule,AdminModule],
   providers: [],
   bootstrap: [AppComponent],
 })

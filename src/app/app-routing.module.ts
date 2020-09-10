@@ -24,14 +24,20 @@ const routes: Routes = [
       {
         path: 'contact',
         loadChildren: () =>
-          import('./contactss/contacts.module').then((m) => m.ContactsModule),
+          import('./contactss/contacts.module').then((m) => m.ContactsModule)
       },
       {
         path: 'products',
         loadChildren: () =>
-          import('./products/product.module').then((m) => m.ProductModule),
+          import('./products/product.module').then((m) => m.ProductModule)
       },
+     
     ],
+  },
+  
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then( (m) => m.AdminModule)
   },
   { path: '**', component: PageNotFoundComponent },
 ];
