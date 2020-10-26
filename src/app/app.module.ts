@@ -8,23 +8,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-
-
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LayoutComponent } from './layout/layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-
-
-
-    PageNotFoundComponent,
-
-    LayoutComponent,
+  declarations: [AppComponent, PageNotFoundComponent, LayoutComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    CoreModule,
+    BrowserAnimationsModule,
+    AdminModule,
+    HttpClientModule,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, CoreModule, BrowserAnimationsModule,AdminModule],
   providers: [],
   bootstrap: [AppComponent],
 })

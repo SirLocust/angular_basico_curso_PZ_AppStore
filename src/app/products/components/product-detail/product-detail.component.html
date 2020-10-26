@@ -1,12 +1,17 @@
-<div>
-    <img [src]="this.myProduct.image" alt="imagen producto">
-</div>
-<div>
-    <ul>
-        <li> {{this.myProduct.title}} </li>
-        <li> {{this.myProduct.price | currency}} </li>
-    </ul>
-    <p>
-        {{this.myProduct.description}}
-    </p>
-</div>
+
+
+<ng-container *ngIf="this.myProduct">
+
+    <div>
+        <img [src]="this.myProduct.image" alt="imagen producto">
+    </div>
+    <div>
+        <ul>
+            <li> {{this.myProduct.title}} </li>
+            <li> {{this.myProduct.price | currency}} </li>
+        </ul>
+        <p>
+            {{this.myProduct.description}}
+        </p>
+    </div>
+</ng-container>
