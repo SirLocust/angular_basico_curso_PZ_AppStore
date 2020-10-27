@@ -20,9 +20,13 @@ export class ProductsService {
 
 
   getAllProducts(){
-    return this.http.get<Product[]>(environment.url_Api);
+    return this.http.get<Product[]>(`${environment.url_Api}/products`);
   }
   getProduct(id:string){
-    return this.http.get<Product>(`${environment.url_Api}${id}`);
+    return this.http.get<Product>(`${environment.url_Api}/products/${id}`);
+  }
+
+  createProduct (product:Product){
+    return this.http.post(`${environment.url_Api}/products`, product);
   }
 }
